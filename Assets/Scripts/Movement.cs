@@ -6,8 +6,8 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        var _movementDirection = Vector3.forward.normalized * _movementSpeed;
+        var movementDirection = Vector3.forward.normalized * _movementSpeed;
         
-        transform.Translate(_movementDirection, Space.Self);
+        transform.Translate(movementDirection, Space.Self);
     }
 }
